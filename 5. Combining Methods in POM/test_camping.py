@@ -17,7 +17,7 @@ class TestUrbanRoutes:
 
         # Choose camping car step to enter "From", "To" and to click "custom_option",
         # "drive_icon", "book button", and "camping"
-        ...
+        urban_routes_page.adding_driver_license()  # Example: 'Anna', 'Smith', '24.04.1889', '01 01 123456')
 
         # Check if the text displays "Audi A3 Sedan"
         actual_value = urban_routes_page.get_audi_text()
@@ -36,12 +36,12 @@ class TestUrbanRoutes:
 
         # Choose camping car step to enter "From", "To" and to click "custom_option",
         # "drive_icon", "book button", and "camping"
-        ...
+        urban_routes_page.choose_camping_car() # Example: 'East 2nd Street, 601', '1300 1st St'
 
         # Adding driver license step to click "add driver's license";
         # to enter "first_name", "last_name", "date_of_birth", "number"; and
         # to click "title" and "add button"
-        ...
+        urban_routes_page.adding_driver_license() # Example: 'Anna', 'Smith', '24.04.1889', '01 01 123456')
 
         # Check that the licence has been added
         actual_value = urban_routes_page.get_verification_text()
